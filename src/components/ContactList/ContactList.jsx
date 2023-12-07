@@ -1,15 +1,15 @@
-import { StyledButton, StyledContactsList } from "components/Phonebook/Phonebook.styled"
+import { StyledContactsItem, StyledContactsList } from "./ContactList.styled"
 
 export const ContactList = ({ filteredContacts, onDeleteUser }) => {
   return (
     <StyledContactsList>
       {filteredContacts.map(user =>
-        <li key={user.id}>
-          {user.name}:{user.number}
-          <StyledButton onClick={() => onDeleteUser(user.id)}>
+        <StyledContactsItem key={user.id}>
+          {user.name}: {user.number}
+          <button onClick={() => onDeleteUser(user.id)}>
             Delete
-          </StyledButton>
-        </li>)}
+          </button>
+        </StyledContactsItem>)}
     </StyledContactsList>
   )
 }

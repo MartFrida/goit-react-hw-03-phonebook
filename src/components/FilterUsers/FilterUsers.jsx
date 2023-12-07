@@ -1,4 +1,4 @@
-import { StyledContactsList, StyledContactsSection, StyledContactsText, StyledInput } from "components/Phonebook/Phonebook.styled"
+import { StyledContactsText, StyledInput } from "components/Phonebook/Phonebook.styled"
 
 export const FilterUsers = ({ filter, handleChangeInput }) => {
   return (<>

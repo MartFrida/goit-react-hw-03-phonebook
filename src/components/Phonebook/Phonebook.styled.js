@@ -9,6 +9,9 @@ width:400px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    h2{
+        margin: 10px;
+    }
 `
 
 export const StyledPhonebook = styled.div`
@@ -27,14 +30,7 @@ export const StyledInput = styled.input`
     `
 export const StyledButton = styled.button`
     padding:5px;
-    margin: 10px;
-    `
-export const StyledContactsSection = styled.div`
     `
 export const StyledContactsText = styled.p`
-    margin:0;
-    `
-export const StyledContactsList = styled.ul`
-    margin:0;
-    padding:0;
+    margin:0 10px;
     `
